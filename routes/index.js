@@ -94,7 +94,7 @@ router.get("/home", (req, res) => {
         },
     ];
     if (req.session.user) {
-        res.render("home", { layout: "homeLayout", books , admin:true});
+        res.render("home", { layout: "homeLayout", books , admin:false});
     } else {
         res.redirect("/");
     }
